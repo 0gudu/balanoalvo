@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mensagem:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a onclick="clicou()" id="mensagem" style="font-size: 13rem; text-decoration: underline; color: blue;">oi</a> bala no alvo
+</body>
+<script>
+    function clicou(){
+        var i = document.getElementById("mensagem").innerHTML;
+        if(i === "oi"){
+            document.getElementById("mensagem").innerHTML = "tchau";
+        } else if (i === "tchau"){
+            document.getElementById("mensagem").innerHTML = "oi";
+        }
+    }
+
+</script>
+</html>
